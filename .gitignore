@@ -2,3 +2,5 @@ gen/
 refs/
 products.json
 genimages.py
+gen-aw26/
+genimages_aw26.py
