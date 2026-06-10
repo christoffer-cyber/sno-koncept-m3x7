@@ -1,0 +1,82 @@
+[
+ {
+  "slug": "flora-daisy-ear",
+  "title": "Flora daisy ear - Silver Plated",
+  "price": 249,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15898_8594791f07-flora-daisy-ear-s-1-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15898_bbb384fa17-flora-daisy-ear-plain-s-baettre-bild-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15898_f9006f8434-flora-daisy-ear-s-2-large.jpg"
+  ]
+ },
+ {
+  "slug": "flora-daisy-neck-40",
+  "title": "Flora daisy neck 40 - Gold Plated",
+  "price": 399,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15914_9fab0cf894-flora-daisy-neck-40-g-2-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15914_ebdb9a5c84-snoe_flora_stack2-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15914_5bf49ce511-flora-daisy-neck-40-g-1-large.jpg"
+  ]
+ },
+ {
+  "slug": "flora-petal-neck-50",
+  "title": "Flora petal neck 45 - Gold Plated",
+  "price": 399,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15911_84928a02e8-flora-petal-neck-50-g-2-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15911_946f36b057-snoe_flora-petal-neck-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15911_efe5ab5113-flora-petal-neck-50-g-1-large.jpg"
+  ]
+ },
+ {
+  "slug": "rule-big-coin-neck-50",
+  "title": "Rule big coin neck 50 - Gold Plated",
+  "price": 499,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15925_1493d1536c-rule-big-coin-neck-50-g-2-korrekt-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15925_a2b2fe21d5-rulebigcoing50-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15925_6f71e69de1-rule-big-coin-neck-50-g-1-2-large.jpg"
+  ]
+ },
+ {
+  "slug": "rule-charm-brace-sclear",
+  "title": "Rule charm brace - Gold Plated",
+  "price": 449,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15943_1945aee088-rule-charm-brace-g-1-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15943_8d6eb27a3e-rule-charm-brace-starburst-brace-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15943_2b4f2d45ee-rule-charm-brace-g-2-large.jpg"
+  ]
+ },
+ {
+  "slug": "rule-coin-pendant-ear",
+  "title": "Rule coin pendant ear - Gold Plated",
+  "price": 349,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/15933_2ae36a9e87-rule-coin-pendant-ear-g-1-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15933_dbd45047ce-rule-coin-pendant-ear-plain-g-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/15933_3261b4d547-rule-coin-pendant-ear-g-2-large.jpg"
+  ]
+ },
+ {
+  "slug": "tulum-elastic-pearl-brace",
+  "title": "Tulum elastic pearl brace - g/mix",
+  "price": 249,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/16453_649c959230-tulum_armband-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/16453_0f8a455ac8-tulum_modell-1-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/16453_0966d51994-snoe_rule_tulum_g-large.jpg"
+  ]
+ },
+ {
+  "slug": "tulum-pearl-neck-40-45",
+  "title": "Tulum pearl neck - g/mix",
+  "price": 299,
+  "images": [
+   "https://sno.centracdn.net/client/dynamic/images/16454_69a4bdf00b-tulum_halsband-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/16454_153f09da40-tulum_model-4-kopia-large.jpg",
+   "https://sno.centracdn.net/client/dynamic/images/16454_d53663dab3-snoe_rule_tulum_g_3-large.jpg"
+  ]
+ }
+]
