@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Alla smycken — Snö of Sweden (konceptdemo)</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Fri frakt över 499 SEK <em>◆</em> 30 dagars öppet köp <em>◆</em> Skickas inom 24 h</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <button class="nav-burger" aria-label="Meny">
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="shop.html">Nyheter</a>
+      <a href="shop.html">Bestsellers</a>
+      <a href="shop.html?cat=Halsband">Halsband</a>
+      <a href="shop.html?cat=Örhängen">Örhängen</a>
+      <a href="shop.html?cat=Armband">Armband</a>
+    </nav>
+    <a class="nav-logo" href="index.html" aria-label="Snö of Sweden">
+      <img src="images/logo.svg" alt="Snö of Sweden">
+    </a>
+    <div class="nav-icons">
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5C12 6 13.5 5 15.5 5 19 5 21 8.5 20.5 12c-2 4.3-8.5 9-8.5 9z"/></svg>
+      <span class="cart-dot"><svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+    </div>
+  </div>
+</header>
+
+<section class="shop-hero">
+  <div class="container">
+    <div class="kicker">Kollektionen</div>
+    <h1>Alla smycken</h1>
+    <p>Guld och silver designat i Sverige — för varje dag och varje tillfälle däremellan.</p>
+  </div>
+</section>
+
+<div class="shop-filters" id="filters">
+  <button class="active" data-f="all">Allt</button>
+  <button data-f="Halsband">Halsband</button>
+  <button data-f="Örhängen">Örhängen</button>
+  <button data-f="Armband">Armband</button>
+</div>
+
+<div class="container">
+  <div class="shop-grid" id="grid">
+      <a class="prod-card reveal" href="rule-big-coin-neck-50.html" data-cat="Halsband">
+        <div class="prod-media">
+          <span class="prod-tag">Bestseller</span>
+          <img class="main" src="images/ecom/pack-rule-big-coin-neck-50-1.jpg" alt="Rule big coin neck 50">
+          <img class="alt" src="images/ecom/worn-rule-big-coin-neck-50-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Rule big coin neck 50</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">499 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="tulum-pearl-neck-40-45.html" data-cat="Halsband">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-tulum-pearl-neck-40-45-1.jpg" alt="Tulum pearl neck">
+          <img class="alt" src="images/ecom/worn-tulum-pearl-neck-40-45-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Tulum pearl neck</div>
+        <div class="prod-meta"><span>Guld / mix</span><span class="price">299 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="flora-daisy-neck-40.html" data-cat="Halsband">
+        <div class="prod-media">
+          <span class="prod-tag">Nyhet</span>
+          <img class="main" src="images/ecom/pack-flora-daisy-neck-40-1.jpg" alt="Flora daisy neck 40">
+          <img class="alt" src="images/ecom/worn-flora-daisy-neck-40-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Flora daisy neck 40</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">399 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="flora-daisy-ear.html" data-cat="Örhängen">
+        <div class="prod-media">
+          <span class="prod-tag">Bestseller</span>
+          <img class="main" src="images/ecom/pack-flora-daisy-ear-1.jpg" alt="Flora daisy ear">
+          <img class="alt" src="images/ecom/worn-flora-daisy-ear-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Flora daisy ear</div>
+        <div class="prod-meta"><span>Silver plated</span><span class="price">249 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="rule-coin-pendant-ear.html" data-cat="Örhängen">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-rule-coin-pendant-ear-1.jpg" alt="Rule coin pendant ear">
+          <img class="alt" src="images/ecom/worn-rule-coin-pendant-ear-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Rule coin pendant ear</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">349 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="rule-charm-brace-sclear.html" data-cat="Armband">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-rule-charm-brace-sclear-1.jpg" alt="Rule charm brace">
+          <img class="alt" src="images/ecom/worn-rule-charm-brace-sclear-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Rule charm brace</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">449 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="tulum-elastic-pearl-brace.html" data-cat="Armband">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-tulum-elastic-pearl-brace-1.jpg" alt="Tulum elastic pearl brace">
+          <img class="alt" src="images/ecom/worn-tulum-elastic-pearl-brace-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Tulum elastic pearl brace</div>
+        <div class="prod-meta"><span>Guld / mix</span><span class="price">249 SEK</span></div>
+      </a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="Snö of Sweden">
+        <p>Smycken designade i Sverige sedan 2006.<br>För alla tillfällen — och alla dagar däremellan.</p>
+      </div>
+      <div>
+        <h4>Shoppa</h4>
+        <ul>
+          <li><a href="shop.html">Alla smycken</a></li>
+          <li><a href="shop.html?cat=Halsband">Halsband</a></li>
+          <li><a href="shop.html?cat=Örhängen">Örhängen</a></li>
+          <li><a href="shop.html?cat=Armband">Armband</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kundservice</h4>
+        <ul>
+          <li><a href="#">Leverans &amp; retur</a></li>
+          <li><a href="#">Smyckesvård</a></li>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Om Snö</h4>
+        <ul>
+          <li><a href="#">Vår historia</a></li>
+          <li><a href="#">Butiker</a></li>
+          <li><a href="#">Återförsäljare</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 Snö of Sweden</span>
+      <span>Konceptdemo — exempelinnehåll, ej ett officiellt erbjudande</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Tillagd i varukorgen ✨</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const cards = [...document.querySelectorAll('#grid .prod-card')];
+const btns = [...document.querySelectorAll('#filters button')];
+function filter(f) {
+  cards.forEach(c => c.classList.toggle('hide', f !== 'all' && c.dataset.cat !== f));
+  btns.forEach(b => b.classList.toggle('active', b.dataset.f === f));
+}
+btns.forEach(b => b.onclick = () => filter(b.dataset.f));
+filter(params.get('cat') || 'all');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+cards.forEach(el => io.observe(el));
+setTimeout(() => cards.forEach(el => el.classList.add('in')), 1600);
+</script>
+
+</body>
+</html>

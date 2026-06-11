@@ -21,11 +21,11 @@
       <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
     <nav class="nav-links">
-      <a href="index.html#bestsellers">Nyheter</a>
-      <a href="index.html#bestsellers">Bestsellers</a>
-      <a href="index.html#kategorier">Halsband</a>
-      <a href="index.html#kategorier">Örhängen</a>
-      <a href="index.html#kategorier">Armband</a>
+      <a href="shop.html">Nyheter</a>
+      <a href="shop.html">Bestsellers</a>
+      <a href="shop.html?cat=Halsband">Halsband</a>
+      <a href="shop.html?cat=Örhängen">Örhängen</a>
+      <a href="shop.html?cat=Armband">Armband</a>
     </nav>
     <a class="nav-logo" href="index.html" aria-label="Snö of Sweden">
       <img src="images/logo.svg" alt="Snö of Sweden">
@@ -39,17 +39,19 @@
 </header>
 
 <div class="container">
-  <div class="crumbs"><a href="index.html">Hem</a><span>/</span><a href="index.html#kategorier">Halsband</a><span>/</span>Rule big coin neck 50</div>
+  <div class="crumbs"><a href="index.html">Hem</a><span>/</span><a href="shop.html?cat=Halsband">Halsband</a><span>/</span>Rule big coin neck 50</div>
 
   <div class="pdp-grid">
     <div class="pdp-gallery">
       <div class="pdp-main">
-        <img id="mainImg" src="images/rule-big-coin-neck-50-1.jpg" alt="Rule big coin neck 50 — Gold plated">
+        <img id="mainImg" src="images/ecom/worn-rule-big-coin-neck-50-1.jpg" alt="Rule big coin neck 50">
       </div>
       <div class="pdp-thumbs">
-        <button class="active" onclick="swap(this,'images/rule-big-coin-neck-50-1.jpg')"><img src="images/rule-big-coin-neck-50-1.jpg" alt="Packshot"></button>
-        <button onclick="swap(this,'images/rule-big-coin-neck-50-2.jpg')"><img src="images/rule-big-coin-neck-50-2.jpg" alt="På modell"></button>
-        <button onclick="swap(this,'images/rule-big-coin-neck-50-3.jpg')"><img src="images/rule-big-coin-neck-50-3.jpg" alt="Detalj"></button>
+        <button class="active" onclick="swap(this,'images/ecom/worn-rule-big-coin-neck-50-1.jpg')"><img src="images/ecom/worn-rule-big-coin-neck-50-1.jpg" alt="Bild 1"></button>
+        <button class="" onclick="swap(this,'images/ecom/worn-rule-big-coin-neck-50-2.jpg')"><img src="images/ecom/worn-rule-big-coin-neck-50-2.jpg" alt="Bild 2"></button>
+        <button class="" onclick="swap(this,'images/ecom/pack-rule-big-coin-neck-50-1.jpg')"><img src="images/ecom/pack-rule-big-coin-neck-50-1.jpg" alt="Bild 3"></button>
+        <button class="" onclick="swap(this,'images/ecom/pack-rule-big-coin-neck-50-2.jpg')"><img src="images/ecom/pack-rule-big-coin-neck-50-2.jpg" alt="Bild 4"></button>
+        <button class="" onclick="swap(this,'images/campaign/fb-rule-livingroom-2.jpg')"><img src="images/campaign/fb-rule-livingroom-2.jpg" alt="Bild 5"></button>
       </div>
     </div>
 
@@ -61,15 +63,15 @@
 
       <div class="opt-label">Färg — <small>Gold plated</small></div>
       <div class="opt-row">
-        <button class="swatch gold active" aria-label="Guld" onclick="pick(this,'.swatch')"></button>
-        <button class="swatch silver" aria-label="Silver" onclick="pick(this,'.swatch')"></button>
+        <button class="swatch gold active" aria-label="Gold plated" onclick="pick(this,'.swatch')"></button>
+        <button class="swatch silver " aria-label="Silver plated" onclick="pick(this,'.swatch')"></button>
       </div>
 
       <div class="opt-label">Längd</div>
       <div class="opt-row">
-        <button class="pill" onclick="pick(this,'.pill')">40 cm</button>
+        <button class="pill " onclick="pick(this,'.pill')">40 cm</button>
         <button class="pill active" onclick="pick(this,'.pill')">50 cm</button>
-        <button class="pill" onclick="pick(this,'.pill')">60 cm</button>
+        <button class="pill " onclick="pick(this,'.pill')">60 cm</button>
       </div>
 
       <div class="pdp-cta">
@@ -85,15 +87,15 @@
 
       <details class="acc" open>
         <summary>Beskrivning</summary>
-        <p>Ett statement-halsband i chunky länk med avtagbart mynthänge. Bär det solo, eller lagra med Tulum pearl neck för sommarens look. 18k guldplätering på mässing — nickelfritt och designat i Sverige.</p>
+        <p>Kollektionens tyngdpunkt. En chunky men förfinad länk i 18k guldplätering med ett avtagbart mynthänge på 15 mm. Bär det solo mot en öppen skjorta, eller lägg det lågt under Flora daisy för en lager-på-lager-look.</p>
       </details>
       <details class="acc">
-        <summary>Material &amp; skötsel</summary>
+        <summary>Material &amp; mått</summary>
         <ul>
           <li>18k guldplätering på mässing</li>
+          <li>Kedjelängd 50 cm</li>
+          <li>Mynthänge Ø 15 mm</li>
           <li>Nickelfritt och hypoallergent</li>
-          <li>Undvik parfym och vatten för längre livslängd</li>
-          <li>Förvara i medföljande smyckespåse</li>
         </ul>
       </details>
       <details class="acc">
@@ -104,46 +106,50 @@
   </div>
 </div>
 
-<section class="section" style="padding-top:0">
+<figure class="pdp-editorial">
+  <img src="images/campaign/fb-rule-livingroom-2.jpg" alt="Rule big coin neck 50 buren">
+  <figcaption>
+    <div class="kicker">Autumn/Winter 2026</div>
+    <p>Buren i en sekelskiftesvåning på Östermalm</p>
+  </figcaption>
+</figure>
+
+<section class="section" style="padding-top:64px">
   <div class="container">
     <div class="section-head reveal">
       <div>
         <div class="kicker">Styla looken</div>
         <h2>Passar med</h2>
       </div>
+      <a class="head-link" href="shop.html">Se alla smycken</a>
     </div>
     <div class="prod-grid">
-      <a class="prod-card reveal" href="#">
+      <a class="prod-card reveal" href="flora-daisy-neck-40.html" data-cat="Halsband">
         <div class="prod-media">
-          <img class="main" src="images/tulum-pearl-neck-40-45-1.jpg" alt="Tulum pearl neck">
-          <img class="alt" src="images/tulum-pearl-neck-40-45-2.jpg" alt="" aria-hidden="true">
+          <span class="prod-tag">Nyhet</span>
+          <img class="main" src="images/ecom/pack-flora-daisy-neck-40-1.jpg" alt="Flora daisy neck 40">
+          <img class="alt" src="images/ecom/worn-flora-daisy-neck-40-1.jpg" alt="" aria-hidden="true">
         </div>
-        <div class="prod-name">Tulum pearl neck</div>
-        <div class="prod-meta"><span>Guld / mix</span><span class="price">299 SEK</span></div>
+        <div class="prod-name">Flora daisy neck 40</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">399 SEK</span></div>
       </a>
-      <a class="prod-card reveal" href="#">
+      <a class="prod-card reveal" href="rule-charm-brace-sclear.html" data-cat="Armband">
         <div class="prod-media">
-          <img class="main" src="images/rule-charm-brace-sclear-1.jpg" alt="Rule charm brace">
-          <img class="alt" src="images/rule-charm-brace-sclear-2.jpg" alt="" aria-hidden="true">
+          
+          <img class="main" src="images/ecom/pack-rule-charm-brace-sclear-1.jpg" alt="Rule charm brace">
+          <img class="alt" src="images/ecom/worn-rule-charm-brace-sclear-1.jpg" alt="" aria-hidden="true">
         </div>
         <div class="prod-name">Rule charm brace</div>
         <div class="prod-meta"><span>Gold plated</span><span class="price">449 SEK</span></div>
       </a>
-      <a class="prod-card reveal" href="#">
+      <a class="prod-card reveal" href="rule-coin-pendant-ear.html" data-cat="Örhängen">
         <div class="prod-media">
-          <img class="main" src="images/rule-coin-pendant-ear-1.jpg" alt="Rule coin pendant ear">
-          <img class="alt" src="images/rule-coin-pendant-ear-2.jpg" alt="" aria-hidden="true">
+          
+          <img class="main" src="images/ecom/pack-rule-coin-pendant-ear-1.jpg" alt="Rule coin pendant ear">
+          <img class="alt" src="images/ecom/worn-rule-coin-pendant-ear-1.jpg" alt="" aria-hidden="true">
         </div>
         <div class="prod-name">Rule coin pendant ear</div>
         <div class="prod-meta"><span>Gold plated</span><span class="price">349 SEK</span></div>
-      </a>
-      <a class="prod-card reveal" href="#">
-        <div class="prod-media">
-          <img class="main" src="images/tulum-elastic-pearl-brace-1.jpg" alt="Tulum elastic pearl brace">
-          <img class="alt" src="images/tulum-elastic-pearl-brace-2.jpg" alt="" aria-hidden="true">
-        </div>
-        <div class="prod-name">Tulum elastic pearl brace</div>
-        <div class="prod-meta"><span>Guld / mix</span><span class="price">249 SEK</span></div>
       </a>
     </div>
   </div>
@@ -151,7 +157,38 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="footer-note" style="border-top:none; padding-top:0">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="Snö of Sweden">
+        <p>Smycken designade i Sverige sedan 2006.<br>För alla tillfällen — och alla dagar däremellan.</p>
+      </div>
+      <div>
+        <h4>Shoppa</h4>
+        <ul>
+          <li><a href="shop.html">Alla smycken</a></li>
+          <li><a href="shop.html?cat=Halsband">Halsband</a></li>
+          <li><a href="shop.html?cat=Örhängen">Örhängen</a></li>
+          <li><a href="shop.html?cat=Armband">Armband</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kundservice</h4>
+        <ul>
+          <li><a href="#">Leverans &amp; retur</a></li>
+          <li><a href="#">Smyckesvård</a></li>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Om Snö</h4>
+        <ul>
+          <li><a href="#">Vår historia</a></li>
+          <li><a href="#">Butiker</a></li>
+          <li><a href="#">Återförsäljare</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
       <span>© 2026 Snö of Sweden</span>
       <span>Konceptdemo — exempelinnehåll, ej ett officiellt erbjudande</span>
     </div>
@@ -161,7 +198,7 @@
 <div class="buybar" id="buybar">
   <div>
     <div class="bb-name">Rule big coin neck 50</div>
-    <div class="bb-price">499 SEK · Guld · 50 cm</div>
+    <div class="bb-price">499 SEK</div>
   </div>
   <button class="btn btn-solid" onclick="addToCart()">Lägg i varukorg</button>
 </div>
@@ -183,18 +220,15 @@ function addToCart() {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2400);
 }
-// sticky buybar visas när CTA scrollat förbi
 const cta = document.querySelector('.pdp-cta');
 const bar = document.getElementById('buybar');
 new IntersectionObserver(([e]) => {
   bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0);
 }, { threshold: 0 }).observe(cta);
-
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-// fallback: visa allt även utan scroll (print, snapshots, äldre browsers)
 setTimeout(() => document.querySelectorAll('.reveal').forEach(el => el.classList.add('in')), 1600);
 </script>
 

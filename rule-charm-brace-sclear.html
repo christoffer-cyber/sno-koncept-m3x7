@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Rule charm brace — Snö of Sweden (konceptdemo)</title>
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Fri frakt över 499 SEK <em>◆</em> 30 dagars öppet köp <em>◆</em> Skickas inom 24 h</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <button class="nav-burger" aria-label="Meny">
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="shop.html">Nyheter</a>
+      <a href="shop.html">Bestsellers</a>
+      <a href="shop.html?cat=Halsband">Halsband</a>
+      <a href="shop.html?cat=Örhängen">Örhängen</a>
+      <a href="shop.html?cat=Armband">Armband</a>
+    </nav>
+    <a class="nav-logo" href="index.html" aria-label="Snö of Sweden">
+      <img src="images/logo.svg" alt="Snö of Sweden">
+    </a>
+    <div class="nav-icons">
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5C12 6 13.5 5 15.5 5 19 5 21 8.5 20.5 12c-2 4.3-8.5 9-8.5 9z"/></svg>
+      <span class="cart-dot"><svg fill="none" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="crumbs"><a href="index.html">Hem</a><span>/</span><a href="shop.html?cat=Armband">Armband</a><span>/</span>Rule charm brace</div>
+
+  <div class="pdp-grid">
+    <div class="pdp-gallery">
+      <div class="pdp-main">
+        <img id="mainImg" src="images/ecom/worn-rule-charm-brace-sclear-1.jpg" alt="Rule charm brace">
+      </div>
+      <div class="pdp-thumbs">
+        <button class="active" onclick="swap(this,'images/ecom/worn-rule-charm-brace-sclear-1.jpg')"><img src="images/ecom/worn-rule-charm-brace-sclear-1.jpg" alt="Bild 1"></button>
+        <button class="" onclick="swap(this,'images/ecom/worn-rule-charm-brace-sclear-2.jpg')"><img src="images/ecom/worn-rule-charm-brace-sclear-2.jpg" alt="Bild 2"></button>
+        <button class="" onclick="swap(this,'images/ecom/pack-rule-charm-brace-sclear-1.jpg')"><img src="images/ecom/pack-rule-charm-brace-sclear-1.jpg" alt="Bild 3"></button>
+        <button class="" onclick="swap(this,'images/ecom/pack-rule-charm-brace-sclear-2.jpg')"><img src="images/ecom/pack-rule-charm-brace-sclear-2.jpg" alt="Bild 4"></button>
+        <button class="" onclick="swap(this,'images/campaign/cu-charm-brace-table-2.jpg')"><img src="images/campaign/cu-charm-brace-table-2.jpg" alt="Bild 5"></button>
+      </div>
+    </div>
+
+    <div class="pdp-info">
+      <div class="pdp-kicker">Rule-kollektionen</div>
+      <h1>Rule charm brace</h1>
+      <div class="pdp-price">449 SEK</div>
+      <div class="pdp-rating"><span class="stars">★★★★★</span>58 recensioner</div>
+
+      <div class="opt-label">Färg — <small>Gold plated</small></div>
+      <div class="opt-row">
+        <button class="swatch gold active" aria-label="Gold plated" onclick="pick(this,'.swatch')"></button>
+      </div>
+
+      <div class="pdp-size-note">Storlek: <b>One size</b></div>
+
+      <div class="pdp-cta">
+        <button class="btn btn-solid btn-block" onclick="addToCart()">Lägg i varukorgen — 449 SEK</button>
+        <button class="btn btn-ghost btn-block">Köp nu med Klarna</button>
+      </div>
+
+      <div class="pdp-usps">
+        <span>Skickas inom 24 h</span>
+        <span>Fri frakt</span>
+        <span>30 dagars öppet köp</span>
+      </div>
+
+      <details class="acc" open>
+        <summary>Beskrivning</summary>
+        <p>Hjärta och klöver i räfflat guld på en fin länk. Charmsen är kollektionens personliga signatur — bygg på med fler över tid.</p>
+      </details>
+      <details class="acc">
+        <summary>Material &amp; mått</summary>
+        <ul>
+          <li>18k guldplätering på mässing</li>
+          <li>Charms 10 mm</li>
+          <li>Justerbar länk</li>
+          <li>Nickelfritt och hypoallergent</li>
+        </ul>
+      </details>
+      <details class="acc">
+        <summary>Leverans &amp; retur</summary>
+        <p>Skickas inom 24 timmar med spårbar frakt. Fri frakt över 499 SEK. 30 dagars öppet köp — returnera enkelt via vår returportal.</p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<figure class="pdp-editorial">
+  <img src="images/campaign/cu-charm-brace-table-2.jpg" alt="Rule charm brace buren">
+  <figcaption>
+    <div class="kicker">Autumn/Winter 2026</div>
+    <p>Vid marmorbordet</p>
+  </figcaption>
+</figure>
+
+<section class="section" style="padding-top:64px">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Styla looken</div>
+        <h2>Passar med</h2>
+      </div>
+      <a class="head-link" href="shop.html">Se alla smycken</a>
+    </div>
+    <div class="prod-grid">
+      <a class="prod-card reveal" href="rule-big-coin-neck-50.html" data-cat="Halsband">
+        <div class="prod-media">
+          <span class="prod-tag">Bestseller</span>
+          <img class="main" src="images/ecom/pack-rule-big-coin-neck-50-1.jpg" alt="Rule big coin neck 50">
+          <img class="alt" src="images/ecom/worn-rule-big-coin-neck-50-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Rule big coin neck 50</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">499 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="tulum-elastic-pearl-brace.html" data-cat="Armband">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-tulum-elastic-pearl-brace-1.jpg" alt="Tulum elastic pearl brace">
+          <img class="alt" src="images/ecom/worn-tulum-elastic-pearl-brace-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Tulum elastic pearl brace</div>
+        <div class="prod-meta"><span>Guld / mix</span><span class="price">249 SEK</span></div>
+      </a>
+      <a class="prod-card reveal" href="rule-coin-pendant-ear.html" data-cat="Örhängen">
+        <div class="prod-media">
+          
+          <img class="main" src="images/ecom/pack-rule-coin-pendant-ear-1.jpg" alt="Rule coin pendant ear">
+          <img class="alt" src="images/ecom/worn-rule-coin-pendant-ear-1.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="prod-name">Rule coin pendant ear</div>
+        <div class="prod-meta"><span>Gold plated</span><span class="price">349 SEK</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="Snö of Sweden">
+        <p>Smycken designade i Sverige sedan 2006.<br>För alla tillfällen — och alla dagar däremellan.</p>
+      </div>
+      <div>
+        <h4>Shoppa</h4>
+        <ul>
+          <li><a href="shop.html">Alla smycken</a></li>
+          <li><a href="shop.html?cat=Halsband">Halsband</a></li>
+          <li><a href="shop.html?cat=Örhängen">Örhängen</a></li>
+          <li><a href="shop.html?cat=Armband">Armband</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kundservice</h4>
+        <ul>
+          <li><a href="#">Leverans &amp; retur</a></li>
+          <li><a href="#">Smyckesvård</a></li>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Om Snö</h4>
+        <ul>
+          <li><a href="#">Vår historia</a></li>
+          <li><a href="#">Butiker</a></li>
+          <li><a href="#">Återförsäljare</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 Snö of Sweden</span>
+      <span>Konceptdemo — exempelinnehåll, ej ett officiellt erbjudande</span>
+    </div>
+  </div>
+</footer>
+
+<div class="buybar" id="buybar">
+  <div>
+    <div class="bb-name">Rule charm brace</div>
+    <div class="bb-price">449 SEK</div>
+  </div>
+  <button class="btn btn-solid" onclick="addToCart()">Lägg i varukorg</button>
+</div>
+
+<div class="toast" id="toast">Tillagd i varukorgen ✨</div>
+
+<script>
+function swap(btn, src) {
+  document.getElementById('mainImg').src = src;
+  document.querySelectorAll('.pdp-thumbs button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+function pick(btn, sel) {
+  btn.parentElement.querySelectorAll(sel).forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+function addToCart() {
+  const t = document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2400);
+}
+const cta = document.querySelector('.pdp-cta');
+const bar = document.getElementById('buybar');
+new IntersectionObserver(([e]) => {
+  bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0);
+}, { threshold: 0 }).observe(cta);
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+setTimeout(() => document.querySelectorAll('.reveal').forEach(el => el.classList.add('in')), 1600);
+</script>
+
+</body>
+</html>

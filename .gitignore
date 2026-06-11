@@ -4,3 +4,11 @@ products.json
 genimages.py
 gen-aw26/
 genimages_aw26.py
+campaign/out/
+campaign/out-ecom/
+campaign/refs-location/
+campaign/refs-styling/
+campaign/refs-models/
+campaign/refs-ecom/
+campaign/gen_campaign.py
+campaign/gen_ecom.py
