@@ -8,31 +8,31 @@
 <link rel="icon" href="../images/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
+/* Snö of Swedens grafiska profil — extraherad ur snoofsweden.com main.css:
+   Playfair Display (display) + Roboto (body), vit/cream-bas,
+   terracotta #DE614A accent, rost #733226, letter-spacing 0.4-0.8px */
 :root {
-  --ember: #1C120A;
-  --ember-soft: #2B1D10;
-  --snow: #FBF8F2;
-  --snow-dim: rgba(251, 248, 242, 0.62);
-  --gold: #D9B97C;
-  --gold-deep: #A8824A;
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Karla", "Helvetica Neue", sans-serif;
+  --white: #FFFFFF;
+  --cream: #F9F7F4;
+  --cream-deep: #F3EEE8;
+  --ink: #000000;
+  --ink-soft: rgba(0, 0, 0, 0.64);
+  --terra: #DE614A;
+  --rust: #733226;
+  --line: rgba(0, 0, 0, 0.12);
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Roboto", Helvetica, sans-serif;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { height: 100%; overflow: hidden; background: var(--ember); }
-body { font-family: var(--font-body); color: var(--snow); }
+html, body { height: 100%; overflow: hidden; background: var(--white); }
+body { font-family: var(--font-body); color: var(--ink); }
 img { display: block; }
 
 .deck { height: 100%; position: relative; }
-.slide {
-  position: absolute;
-  inset: 0;
-  display: none;
-  overflow: hidden;
-}
+.slide { position: absolute; inset: 0; display: none; overflow: hidden; }
 .slide.active { display: block; }
 .slide-inner { height: 100%; }
 
@@ -44,21 +44,37 @@ img { display: block; }
 }
 
 .kicker {
-  font-size: clamp(10px, 1vw, 13px);
-  letter-spacing: 0.28em;
+  font-size: clamp(10px, 0.95vw, 13px);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--gold);
+  font-weight: 500;
+  color: var(--rust);
 }
-h1, h2 { font-family: var(--font-display); font-weight: 400; line-height: 1.04; }
-h1 { font-size: clamp(48px, 7.5vw, 120px); letter-spacing: -0.01em; }
-h2 { font-size: clamp(30px, 4.2vw, 64px); }
-h1 em, h2 em { font-style: italic; color: var(--gold); }
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.8px;
+}
+h1 { font-size: clamp(44px, 6.5vw, 100px); }
+h2 { font-size: clamp(28px, 3.8vw, 56px); }
+h1 em, h2 em { font-style: italic; color: var(--rust); }
 .body {
-  font-size: clamp(14px, 1.25vw, 18px);
-  line-height: 1.7;
-  color: var(--snow-dim);
-  max-width: 46ch;
+  font-size: clamp(14px, 1.2vw, 17px);
+  line-height: 1.75;
+  letter-spacing: 0.3px;
+  color: var(--ink-soft);
+  max-width: 48ch;
 }
+
+/* arrow-link i Snös stil (pil efter text, ingen boxknapp) */
+.arrow-link {
+  font-size: clamp(13px, 1.05vw, 15px);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: var(--ink);
+}
+.arrow-link::after { content: " →"; color: var(--terra); }
 
 /* cover */
 .cover { position: relative; }
@@ -67,7 +83,7 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(28,18,10,0.88) 0%, rgba(28,18,10,0.45) 42%, transparent 68%);
+  background: linear-gradient(100deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 42%, transparent 66%);
 }
 .cover-copy {
   position: absolute;
@@ -77,18 +93,19 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: clamp(14px, 2vh, 26px);
+  gap: clamp(14px, 2vh, 24px);
 }
-.cover-logo { width: clamp(40px, 4vw, 60px); }
+.cover-copy .kicker, .cover-copy h1, .cover-copy .body { color: var(--white); }
+.cover-logo { width: clamp(40px, 4vw, 58px); }
 .cover-note {
   position: absolute;
   left: clamp(28px, 6vw, 96px);
   bottom: clamp(20px, 4vh, 40px);
   z-index: 1;
   font-size: 11px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--snow-dim);
+  color: rgba(255,255,255,0.75);
 }
 
 /* concept slide */
@@ -98,19 +115,17 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   flex-direction: column;
   justify-content: center;
   padding: 0 clamp(28px, 8vw, 130px);
-  gap: clamp(18px, 3.5vh, 34px);
-  background:
-    radial-gradient(120% 90% at 85% 110%, rgba(217,185,124,0.16) 0%, transparent 55%),
-    var(--ember);
+  gap: clamp(18px, 3.5vh, 32px);
+  background: var(--cream);
 }
 .concept-words {
   display: flex;
   gap: clamp(20px, 4vw, 56px);
   flex-wrap: wrap;
-  margin-top: clamp(8px, 2vh, 18px);
+  margin-top: clamp(8px, 2vh, 16px);
 }
 .concept-words div {
-  border-top: 1px solid var(--gold-deep);
+  border-top: 1px solid var(--terra);
   padding-top: 14px;
   min-width: 150px;
 }
@@ -118,35 +133,39 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   display: block;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(18px, 1.8vw, 26px);
+  font-size: clamp(18px, 1.7vw, 25px);
   margin-bottom: 6px;
 }
-.concept-words span { font-size: clamp(12px, 1vw, 15px); color: var(--snow-dim); }
+.concept-words span { font-size: clamp(12px, 0.95vw, 14px); color: var(--ink-soft); letter-spacing: 0.3px; }
 
 /* key piece slides */
-.piece {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+.piece { height: 100%; display: grid; grid-template-columns: 1fr 1fr; }
 .piece-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 clamp(28px, 5.5vw, 90px);
-  gap: clamp(12px, 2.4vh, 22px);
-  background: var(--ember);
+  gap: clamp(12px, 2.4vh, 20px);
+  background: var(--white);
 }
+.piece:nth-of-type(even) .piece-copy { background: var(--cream); }
 .piece-copy .price {
-  font-size: clamp(16px, 1.5vw, 22px);
-  color: var(--gold);
-  letter-spacing: 0.04em;
+  font-size: clamp(15px, 1.3vw, 19px);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+}
+.piece-copy .price small {
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 0.85em;
 }
 .piece-copy .num {
-  font-family: var(--font-display);
-  font-style: italic;
-  color: var(--gold-deep);
-  font-size: clamp(13px, 1.1vw, 16px);
+  font-size: clamp(11px, 0.9vw, 13px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--terra);
 }
 .piece-media { position: relative; }
 .piece-media img { width: 100%; height: 100%; object-fit: cover; }
@@ -159,7 +178,7 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(28,18,10,0.75) 0%, transparent 45%);
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 45%);
 }
 .bleed-copy {
   position: absolute;
@@ -168,6 +187,9 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   z-index: 1;
   max-width: 60ch;
 }
+.bleed-copy .kicker { color: var(--cream-deep); }
+.bleed-copy h2 { color: var(--white); }
+.bleed-copy h2 em { color: var(--cream-deep); }
 
 /* grid slide */
 .lineup {
@@ -175,27 +197,29 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 clamp(28px, 5vw, 80px) clamp(48px, 9vh, 80px);
-  gap: clamp(16px, 3vh, 30px);
-  background: var(--ember);
+  padding: clamp(20px, 4vh, 36px) clamp(28px, 5vw, 80px) clamp(48px, 9vh, 80px);
+  gap: clamp(16px, 3vh, 28px);
+  background: var(--white);
 }
 .lineup-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(10px, 1.4vw, 22px);
 }
-.lineup-grid figure { background: var(--snow); }
-.lineup-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.lineup-grid figure { background: var(--cream-deep); border: 1px solid var(--line); }
+.lineup-grid img { width: 100%; aspect-ratio: 1; max-height: 24vh; object-fit: cover; }
 .lineup-grid figcaption {
-  background: var(--ember-soft);
+  background: var(--white);
+  border-top: 1px solid var(--line);
   padding: 8px 10px;
-  font-size: clamp(10px, 0.85vw, 13px);
+  font-size: clamp(10px, 0.82vw, 13px);
+  letter-spacing: 0.3px;
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
-.lineup-grid figcaption b { font-weight: 700; }
-.lineup-grid figcaption span { color: var(--gold); white-space: nowrap; }
+.lineup-grid figcaption b { font-weight: 500; }
+.lineup-grid figcaption span { color: var(--ink-soft); white-space: nowrap; }
 
 /* end slide */
 .end {
@@ -204,14 +228,12 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(16px, 3vh, 28px);
+  gap: clamp(16px, 3vh, 26px);
   text-align: center;
-  background:
-    radial-gradient(80% 60% at 50% 115%, rgba(217,185,124,0.2) 0%, transparent 60%),
-    var(--ember);
+  background: var(--cream);
 }
-.end img { width: clamp(54px, 5vw, 80px); }
-.end .body { max-width: 52ch; }
+.end img { width: clamp(54px, 5vw, 76px); }
+.end .body { max-width: 56ch; }
 
 /* nav chrome */
 .counter {
@@ -220,11 +242,13 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
   bottom: clamp(16px, 3vh, 32px);
   z-index: 10;
   font-size: 12px;
-  letter-spacing: 0.2em;
-  color: var(--snow-dim);
-  text-shadow: 0 1px 8px rgba(28, 18, 10, 0.9), 0 0 2px rgba(28, 18, 10, 0.8);
+  letter-spacing: 0.5px;
+  color: var(--ink-soft);
+  background: rgba(255, 255, 255, 0.82);
+  padding: 4px 10px;
+  border-radius: 2px;
 }
-.counter b { color: var(--gold); font-weight: 700; }
+.counter b { color: var(--ink); font-weight: 500; }
 .arrows {
   position: fixed;
   right: clamp(20px, 3vw, 44px);
@@ -235,20 +259,20 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
 }
 .arrows button {
   width: 38px; height: 38px;
-  background: rgba(28, 18, 10, 0.35);
-  border: 1px solid rgba(251,248,242,0.3);
-  color: var(--snow);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--line);
+  color: var(--ink);
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s var(--ease);
   font-family: inherit;
 }
-.arrows button:hover { border-color: var(--gold); color: var(--gold); }
+.arrows button:hover { border-color: var(--terra); color: var(--terra); }
 .progress {
   position: fixed;
   left: 0; bottom: 0;
   height: 2px;
-  background: var(--gold);
+  background: var(--terra);
   z-index: 10;
   transition: width 0.5s var(--ease);
 }
@@ -300,7 +324,8 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
         <div class="num fade-in">Key piece 01 — Halsband</div>
         <h2 class="fade-in">Rule big coin<br>neck&nbsp;50</h2>
         <p class="body fade-in-late">Kollektionens tyngdpunkt. Chunky länk med avtagbart mynthänge — statement nog att bära solo mot en mörk polo, mjukt nog att lagras.</p>
-        <div class="price fade-in-late">499 kr · Gold plated</div>
+        <div class="price fade-in-late">499 SEK <small>· Gold plated</small></div>
+        <span class="arrow-link fade-in-late">Se i kollektionen</span>
       </div>
       <div class="piece-media"><img src="img/key-rule.jpg" alt="Rule big coin neck 50"></div>
     </div>
@@ -311,9 +336,10 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
     <div class="slide-inner piece flip">
       <div class="piece-copy">
         <div class="num fade-in">Key piece 02 — Halsband</div>
-        <h2 class="fade-in">Flora petal neck 45</h2>
+        <h2 class="fade-in">Flora petal neck&nbsp;45</h2>
         <p class="body fade-in-late">Sommarens blomma i vinterversion — platt borstat guld med en enda pärla, buren mot camel-stick. Den mjuka kontrasten i kollektionen.</p>
-        <div class="price fade-in-late">399 kr · Gold plated</div>
+        <div class="price fade-in-late">399 SEK <small>· Gold plated</small></div>
+        <span class="arrow-link fade-in-late">Se i kollektionen</span>
       </div>
       <div class="piece-media"><img src="img/key-petal.jpg" alt="Flora petal neck 45"></div>
     </div>
@@ -326,7 +352,8 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
         <div class="num fade-in">Key piece 03 — Örhängen</div>
         <h2 class="fade-in">Flora daisy ear</h2>
         <p class="body fade-in-late">Silver som lyser mot höga kragar och halsdukar. Liten, exakt och dagligt bärbar — örat är AW-säsongens mest synliga smyckesyta.</p>
-        <div class="price fade-in-late">249 kr · Silver plated</div>
+        <div class="price fade-in-late">249 SEK <small>· Silver plated</small></div>
+        <span class="arrow-link fade-in-late">Se i kollektionen</span>
       </div>
       <div class="piece-media"><img src="img/key-ear.jpg" alt="Flora daisy ear"></div>
     </div>
@@ -339,7 +366,8 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
         <div class="num fade-in">Key piece 04 — Armband</div>
         <h2 class="fade-in">Rule charm brace</h2>
         <p class="body fade-in-late">Hjärta och klöver i räfflat guld, byggt för uppkavlade stickade ärmar och varma koppar. Charmsen är kollektionens personliga signatur.</p>
-        <div class="price fade-in-late">449 kr · Gold plated</div>
+        <div class="price fade-in-late">449 SEK <small>· Gold plated</small></div>
+        <span class="arrow-link fade-in-late">Se i kollektionen</span>
       </div>
       <div class="piece-media"><img src="img/key-brace.jpg" alt="Rule charm brace"></div>
     </div>
@@ -352,7 +380,7 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
         <div class="num fade-in">Styling</div>
         <h2 class="fade-in">Lager på <em>lager</em></h2>
         <p class="body fade-in-late">AW26 styls i par: Rule big coin lågt, Flora daisy kort ovanför. Två längder, två uttryck — en look. Merförsäljningsstoryn ligger inbyggd i kollektionen.</p>
-        <div class="price fade-in-late">Rule big coin 499 kr + Flora daisy neck 399 kr</div>
+        <div class="price fade-in-late">Rule big coin 499 SEK + Flora daisy neck 399 SEK</div>
       </div>
       <div class="piece-media"><img src="img/layering.jpg" alt="Lager på lager — Rule + Flora daisy"></div>
     </div>
@@ -377,14 +405,14 @@ h1 em, h2 em { font-style: italic; color: var(--gold); }
         <h2 class="fade-in">Kollektionen i korthet</h2>
       </div>
       <div class="lineup-grid fade-in-late">
-        <figure><img src="../images/rule-big-coin-neck-50-1.jpg" alt=""><figcaption><b>Rule big coin neck 50</b><span>499 kr</span></figcaption></figure>
-        <figure><img src="../images/flora-petal-neck-50-1.jpg" alt=""><figcaption><b>Flora petal neck 45</b><span>399 kr</span></figcaption></figure>
-        <figure><img src="../images/rule-charm-brace-sclear-1.jpg" alt=""><figcaption><b>Rule charm brace</b><span>449 kr</span></figcaption></figure>
-        <figure><img src="../images/flora-daisy-ear-1.jpg" alt=""><figcaption><b>Flora daisy ear</b><span>249 kr</span></figcaption></figure>
-        <figure><img src="../images/flora-daisy-neck-40-1.jpg" alt=""><figcaption><b>Flora daisy neck 40</b><span>399 kr</span></figcaption></figure>
-        <figure><img src="../images/rule-coin-pendant-ear-1.jpg" alt=""><figcaption><b>Rule coin pendant ear</b><span>349 kr</span></figcaption></figure>
-        <figure><img src="../images/tulum-pearl-neck-40-45-1.jpg" alt=""><figcaption><b>Tulum pearl neck</b><span>299 kr</span></figcaption></figure>
-        <figure><img src="../images/tulum-elastic-pearl-brace-1.jpg" alt=""><figcaption><b>Tulum elastic brace</b><span>249 kr</span></figcaption></figure>
+        <figure><img src="../images/rule-big-coin-neck-50-1.jpg" alt=""><figcaption><b>Rule big coin neck 50</b><span>499 SEK</span></figcaption></figure>
+        <figure><img src="../images/flora-petal-neck-50-1.jpg" alt=""><figcaption><b>Flora petal neck 45</b><span>399 SEK</span></figcaption></figure>
+        <figure><img src="../images/rule-charm-brace-sclear-1.jpg" alt=""><figcaption><b>Rule charm brace</b><span>449 SEK</span></figcaption></figure>
+        <figure><img src="../images/flora-daisy-ear-1.jpg" alt=""><figcaption><b>Flora daisy ear</b><span>249 SEK</span></figcaption></figure>
+        <figure><img src="../images/flora-daisy-neck-40-1.jpg" alt=""><figcaption><b>Flora daisy neck 40</b><span>399 SEK</span></figcaption></figure>
+        <figure><img src="../images/rule-coin-pendant-ear-1.jpg" alt=""><figcaption><b>Rule coin pendant ear</b><span>349 SEK</span></figcaption></figure>
+        <figure><img src="../images/tulum-pearl-neck-40-45-1.jpg" alt=""><figcaption><b>Tulum pearl neck</b><span>299 SEK</span></figcaption></figure>
+        <figure><img src="../images/tulum-elastic-pearl-brace-1.jpg" alt=""><figcaption><b>Tulum elastic brace</b><span>249 SEK</span></figcaption></figure>
       </div>
     </div>
   </section>
@@ -416,7 +444,6 @@ document.getElementById('tot').textContent = slides.length;
 function go(n) {
   i = Math.max(0, Math.min(slides.length - 1, n));
   slides.forEach((s, k) => s.classList.toggle('active', k === i));
-  // restart entrance animations
   slides[i].querySelectorAll('.fade-in, .fade-in-late').forEach(el => {
     el.style.animation = 'none';
     void el.offsetWidth;
