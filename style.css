@@ -5,18 +5,19 @@
    ============================================================ */
 
 :root {
-  --snow: #FBF8F2;
-  --sand: #F2E9DC;
-  --sand-deep: #E9DCC8;
-  --ink: #17120C;
-  --ink-soft: #4A4138;
-  --gold: #A8824A;
-  --gold-deep: #8C6A38;
+  /* Snös grafiska profil — scrapad ur snoofsweden.com tema-CSS */
+  --snow: #FFFFFF;
+  --sand: #F9F7F4;
+  --sand-deep: #F3EEE8;
+  --ink: #000000;
+  --ink-soft: rgba(0, 0, 0, 0.64);
+  --gold: #DE614A;        /* terracotta-accent */
+  --gold-deep: #733226;   /* mörk rost */
   --white: #FFFFFF;
-  --line: rgba(23, 18, 12, 0.12);
+  --line: rgba(0, 0, 0, 0.12);
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Karla", "Helvetica Neue", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Roboto", Helvetica, sans-serif;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -57,14 +58,14 @@ button { font-family: inherit; cursor: pointer; }
   text-align: center;
   padding: 9px 16px;
 }
-.announce em { font-style: normal; color: #D9B97C; }
+.announce em { font-style: normal; color: #DE614A; }
 
 /* ---------- nav ---------- */
 .nav {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(251, 248, 242, 0.88);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
@@ -159,7 +160,7 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 400;
   font-size: clamp(38px, 9vw, 72px);
   line-height: 1.05;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.8px;
   margin-bottom: 22px;
   animation: rise 0.9s 0.12s var(--ease-out) both;
 }
@@ -383,6 +384,7 @@ button { font-family: inherit; cursor: pointer; }
   left: 10px;
   z-index: 1;
   background: var(--snow);
+  color: var(--gold);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -491,7 +493,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #D9B97C;
+  color: #DE614A;
   margin-bottom: 14px;
 }
 .newsletter h2 {
@@ -518,8 +520,8 @@ button { font-family: inherit; cursor: pointer; }
   outline: none;
 }
 .nl-form input::placeholder { color: rgba(251,248,242,0.5); }
-.nl-form input:focus { border-color: #D9B97C; }
-.nl-form .btn { border-color: #D9B97C; background: #D9B97C; color: var(--ink); }
+.nl-form input:focus { border-color: #DE614A; }
+.nl-form .btn { border-color: #DE614A; background: #DE614A; color: var(--ink); }
 .nl-form .btn:hover { background: var(--snow); border-color: var(--snow); }
 @media (min-width: 640px) {
   .nl-form { flex-direction: row; }
@@ -548,7 +550,7 @@ button { font-family: inherit; cursor: pointer; }
   margin-bottom: 14px;
 }
 .footer li { margin-bottom: 8px; }
-.footer a:hover { color: #D9B97C; }
+.footer a:hover { color: #DE614A; }
 .footer-logo img { width: 44px; height: 44px; margin-bottom: 14px; }
 .footer-note {
   border-top: 1px solid rgba(251,248,242,0.12);
